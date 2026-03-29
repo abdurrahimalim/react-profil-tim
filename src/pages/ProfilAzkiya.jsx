@@ -1,3 +1,4 @@
+
 function ProfilAzkiya(){
     return (
         <div className="min-h-screen bg-gray-100 flex items-center justify-center">
@@ -39,5 +40,4 @@ function ProfilAzkiya(){
         </div>
     )
 }
-
 export default ProfilAzkiya;
