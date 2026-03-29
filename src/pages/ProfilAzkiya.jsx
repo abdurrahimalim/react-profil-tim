@@ -1,23 +1,29 @@
 
 function ProfilAzkiya(){
     return (
-        <div className="min-h-screen bg-gray-100 flex items-center justify-center">
+        <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-500 via-indigo-500 to-blue-400 p-4">
             <div className="bg-white shadow-lg rounded-2xl p-8 max-w-md w-full text-center">
-
+               
+                {/*Foto*/}
                 <img
                 src='/foto-azkiya.jpg'
                 alt='foto Azkiya'
                 className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                 />
 
+                {/*Nama*/}
                 <h1 className="text-2xl font-bold text-gray-800">Azkiya Faza Putri Pratama</h1>
 
-                <p className="text-blue-200 text-lg">NIM: 253140707111014</p>
-                <p className="text-gray-600 mt-2">Kelas: T2D</p>
-                <p className="text-gray-600">Jurusan: Teknologi Informasi (D3)</p>
-                <p className="text-gray-600">Domisili: Kalimantan Selatan, Tanah Bumbu</p>
-
-                <div className="mt-4 text-gray-700 text-sm text-justify">
+                {/*Data Diri*/}
+                <div className="mt-4 text-gray-700 space-y-1">
+                    <p>NIM: 253140707111014</p>
+                    <p>Kelas: T2D</p>
+                    <p>Jurusan: Teknologi Informasi (D3)</p>
+                    <p>Domisili: Kalimantan Selatan, Tanah Bumbu</p>
+                </div>
+                
+                {/*Tentang diri saya*/}
+                <div className="mt-5 text-gray-700 text-justify leading-relaxed">
                     <p>
                         Saya adalah seorang mahasiswa di Universitas Brawijaya, Fakultas Vokasi,
                     jurusan Teknologi Informasi D3. Saat ini saya sedang belajar di bidang Teknologi,
@@ -35,6 +41,18 @@ function ProfilAzkiya(){
                     Saya berharap kedepannya dapat terus mengembangkan kemampuan yang saya miliki dan menjadi
                     pribadi yang lebih baik di bidang teknologi.
                     </p>
+                </div>
+                <hr className="my-5"/>
+
+                {/*Social media*/}
+                <h2 className="font-semibold  text-gray-800 mb-3">
+                    Social Media
+                </h2>
+
+                <div className="flex justify-center gap-6 text-blue-600  text-sm">
+                    <p>Instagram: @username</p> 
+                    <p>GitHub: github.com/username</p> 
+                    <p>LinkedIn: linkedin.com/in/username</p>
                 </div>
             </div>
         </div>
