@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 function ProfilAbdurrahim() {
   return (
     <div className='min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100'>
@@ -10,8 +11,7 @@ function ProfilAbdurrahim() {
           <img
             src='/foto-abdurrahim.jpg'
             alt='Foto Abdurrahim'
-            className='w-32 h-32 rounded-full object-cover
-                       border-4 border-white shadow-lg mx-auto mb-4'
+            className='w-32 h-32 rounded-full object-cover border-4 border-white shadow-lg mx-auto mb-4'
           />
 
           {/*Nama sama nim*/}
@@ -37,7 +37,7 @@ function ProfilAbdurrahim() {
             </div>
             <div className='bg-blue-50 rounded-xl p-4'>
               <p className='text-sm text-gray-500'>Domisili</p>
-              <p className='font-semibold text-gray-800'>Kota Malang</p>
+              <p className='font-semibold text-gray-800'>Jawa Timur, Kota Malang</p>
             </div>
           </div>
         </div>
@@ -58,11 +58,14 @@ function ProfilAbdurrahim() {
         </div>
 
         {/*Tombol untuk balik ke halaman utama*/}
-        <div className='text-center'>
-          <a href='/' className='text-blue-600 hover:text-blue-800
-                                  underline text-sm'>
-            Kembali ke Halaman Tim
-          </a>
+        <div className='text-center mb-8'>
+          <Link
+            to='/'
+            className='inline-flex items-center gap-2 bg-blue-700 text-white
+                       px-6 py-3 rounded-xl hover:bg-blue-800 transition-all
+                       font-semibold shadow-lg'>
+            ← Kembali ke Halaman Utama
+          </Link>
         </div>
       </div>
     </div>
